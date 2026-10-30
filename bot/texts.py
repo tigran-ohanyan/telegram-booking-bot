@@ -1,0 +1,26 @@
+WELCOME = (
+    "Hi, {name}! 👋\n\n"
+    "I can book an appointment for you in a couple of taps. What would you like to do?"
+)
+CHOOSE_SERVICE = "Choose a service:"
+CHOOSE_DAY = "<b>{service}</b> · {duration} min\n\nChoose a day:"
+CHOOSE_SLOT = "<b>{service}</b> · {day}\n\nChoose a time:"
+NO_DAYS = "There are no working days configured yet. Please try again later."
+NO_SLOTS = "No free slots on {day}. Pick another day:"
+CONFIRM = (
+    "Please confirm your booking:\n\n"
+    "Service: <b>{service}</b>\n"
+    "When: <b>{when}</b>\n"
+    "Duration: {duration} min\n"
+    "{price_line}"
+)
+PRICE_LINE = "Price: {price}\n"
+BOOKED = "✅ You're booked!\n\n<b>{service}</b>\n{when}\n\nI'll remind you one hour before."
+SLOT_TAKEN = "Sorry, that slot was just taken. Please choose another time."
+CANCELLED_FLOW = "Booking cancelled. Nothing was saved."
+MY_BOOKINGS_EMPTY = "You have no upcoming bookings."
+MY_BOOKINGS = "Your upcoming bookings:"
+BOOKING_CANCELLED = "Booking cancelled."
+BOOKING_NOT_FOUND = "That booking is no longer active."
+REMINDER = "⏰ Reminder: <b>{service}</b> starts at <b>{when}</b>. See you soon!"
+ADMIN_CANCELLED_USER = "Your booking <b>{service}</b> on {when} was cancelled by the administrator."
