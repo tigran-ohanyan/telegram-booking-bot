@@ -86,11 +86,7 @@ def my_bookings_kb(bookings: list[Booking]) -> InlineKeyboardMarkup:
         label = f"❌ {b.starts_at.strftime('%d %b %H:%M')} · {b.service_name}"
         kb.button(text=label, callback_data=CancelCb(id=b.id))
     kb.adjust(1)
-    kb.row(
-        InlineKeyboardBuilder()
-        .button(text="« Menu", callback_data=MenuCb(action="menu"))
-        .buttons[0]
-    )
+    kb.row(InlineKeyboardButton(text="« Menu", callback_data=MenuCb(action="menu").pack()))
     return kb.as_markup()
 
 
