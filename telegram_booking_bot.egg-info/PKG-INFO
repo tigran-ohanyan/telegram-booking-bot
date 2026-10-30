@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: telegram-booking-bot
+Version: 0.1.0
+Summary: Telegram bot for booking appointments with an admin panel and reminders
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: aiogram<4,>=3.13
+Requires-Dist: aiosqlite>=0.20
+Requires-Dist: apscheduler<4,>=3.10
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+
+# telegram-booking-bot
+
+Telegram bot for booking appointments (barbershop, clinic, tutor, any service with time slots).
+
+Work in progress.
